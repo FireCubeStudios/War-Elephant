@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35507.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarElephant", "WarElephant\WarElephant.csproj", "{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarElephant.Core", "WarElephant.Core\WarElephant.Core.csproj", "{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|arm64 = Debug|arm64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|arm64 = Release|arm64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Debug|arm64.ActiveCfg = Debug|arm64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Debug|arm64.Build.0 = Debug|arm64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Debug|arm64.Deploy.0 = Debug|arm64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Debug|x64.ActiveCfg = Debug|x64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Debug|x64.Build.0 = Debug|x64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Debug|x64.Deploy.0 = Debug|x64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Debug|x86.ActiveCfg = Debug|x86
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Debug|x86.Build.0 = Debug|x86
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Debug|x86.Deploy.0 = Debug|x86
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Release|arm64.ActiveCfg = Release|arm64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Release|arm64.Build.0 = Release|arm64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Release|arm64.Deploy.0 = Release|arm64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Release|x64.ActiveCfg = Release|x64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Release|x64.Build.0 = Release|x64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Release|x64.Deploy.0 = Release|x64
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Release|x86.ActiveCfg = Release|x86
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Release|x86.Build.0 = Release|x86
+		{93CEEFA6-995E-4779-9DA1-7C7BA8974DE8}.Release|x86.Deploy.0 = Release|x86
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Debug|arm64.Build.0 = Debug|Any CPU
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Debug|x64.Build.0 = Debug|Any CPU
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Debug|x86.Build.0 = Debug|Any CPU
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Release|arm64.ActiveCfg = Release|Any CPU
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Release|arm64.Build.0 = Release|Any CPU
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Release|x64.ActiveCfg = Release|Any CPU
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Release|x64.Build.0 = Release|Any CPU
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Release|x86.ActiveCfg = Release|Any CPU
+		{86D54F1F-96BA-4475-AEF5-FD6F5E7AA218}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B765A501-28FC-4514-A80F-793BCEAE4070}
+	EndGlobalSection
+EndGlobal

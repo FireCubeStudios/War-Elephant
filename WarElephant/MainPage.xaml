@@ -1,0 +1,102 @@
+﻿<Page
+    x:Class="WarElephant.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WarElephant"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:icons="using:WarElephant.Icons"
+    mc:Ignorable="d"
+    SizeChanged="Page_SizeChanged"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    <Grid>
+        <Border
+            x:Name="AppTitleBar"
+            Height="48"
+            Padding="12,0,0,0"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            Canvas.ZIndex="1"
+            IsHitTestVisible="True">
+            <StackPanel Orientation="Horizontal">
+                <Image
+                    x:Name="AppFontIcon"
+                    Width="16"
+                    Height="16"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Source="Assets/Square44x44Logo.png" />
+                <TextBlock
+                    x:Name="AppTitle"
+                    Margin="12,0,0,0"
+                    VerticalAlignment="Center"
+                    Style="{StaticResource CaptionTextBlockStyle}"
+                    Text="War Elephant" />
+                <TextBlock
+                    Margin="4,0,0,0"
+                    VerticalAlignment="Center"
+                    Opacity="0.4"
+                    Style="{StaticResource CaptionTextBlockStyle}"
+                    Text="Insider"/>
+            </StackPanel>
+        </Border>
+        <muxc:NavigationView 
+            x:Name="AppNavigation"
+            Margin="0,48,0,0"
+            IsBackButtonVisible="Collapsed"
+            IsSettingsVisible="True"
+            IsBackEnabled="False"
+            IsPaneOpen="True"
+            IsPaneToggleButtonVisible="False"
+            IsTitleBarAutoPaddingEnabled="False"
+            OpenPaneLength="72"
+            CompactPaneLength="72"
+            PaneDisplayMode="Left"
+            Style="{ThemeResource StoreNavigationViewStyle}">
+            <muxc:NavigationView.MenuItems>
+                <muxc:NavigationViewItem Content="Home" Icon="Home" Tag="Home">
+                </muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Content="Notifications" Tag="Notifications">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEA8F;"/>
+                    </muxc:NavigationViewItem.Icon>
+                    <muxc:NavigationViewItem.InfoBadge>
+                        <muxc:InfoBadge Style="{StaticResource AttentionDotInfoBadgeStyle}" />
+                    </muxc:NavigationViewItem.InfoBadge>
+                </muxc:NavigationViewItem>
+            </muxc:NavigationView.MenuItems>
+            <muxc:NavigationView.FooterMenuItems>
+                <muxc:NavigationViewItem Tag="Profile">
+                    <StackPanel>
+                        <PersonPicture Height="36" />
+                        <TextBlock x:Name="ProfileText" HorizontalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                    </StackPanel>
+                </muxc:NavigationViewItem></muxc:NavigationView.FooterMenuItems>
+            <muxc:NavigationView.Content>
+                <Grid x:Name="NavigationContent" Margin="0, 0, 8, 8" CornerRadius="8">
+                    <Grid>
+                        <Grid x:Name="DualPane" Visibility="Visible" ColumnSpacing="8">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" MinWidth="460"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid x:Name="PrimaryPaneContainer" Canvas.ZIndex="1" Grid.Column="0" Background="{ThemeResource MicaDarkerBrush}" CornerRadius="8" BorderThickness="1" BorderBrush="{ThemeResource MicaBorderBrush}">
+                                <Grid Background="{ThemeResource MicaBlurBrush}">
+                                    <Frame x:Name="PrimaryPane"/>
+                                </Grid>
+                            </Grid>
+                            <Grid x:Name="SecondaryPaneContainer" Canvas.ZIndex="0" Grid.Column="1" Grid.ColumnSpan="2" Background="{ThemeResource MicaDarkerBrush}" CornerRadius="8" BorderThickness="1" BorderBrush="{ThemeResource MicaBorderBrush}">
+                                <Grid Background="{ThemeResource MicaBlurBrush}">
+                                    <Frame x:Name="SecondaryPane"/>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </muxc:NavigationView.Content>
+        </muxc:NavigationView>
+    </Grid>
+</Page>

@@ -13,6 +13,9 @@
     <DisableRuntimeMarshalling>true</DisableRuntimeMarshalling>
     <EnableMsixTooling>true</EnableMsixTooling>
     <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
+
+    <AppxGeneratePackageOnBuild>true</AppxGeneratePackageOnBuild>
+    
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <PackageCertificateKeyFile>WarElephant_TemporaryKey.pfx</PackageCertificateKeyFile>

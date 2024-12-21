@@ -14,7 +14,7 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
 
-    <AppxGeneratePackageOnBuild>true</AppxGeneratePackageOnBuild>
+    <GenerateAppxPackageOnBuild>true</GenerateAppxPackageOnBuild>
     
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
